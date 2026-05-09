@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --color-emerald-primary: #047857;
+  --color-emerald-dark: #1A2E26;
+  --color-amber-primary: #f59e0b;
+  --color-amber-light: #fef3c7;
+  --color-off-white: #F9FBF7;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-off-white text-emerald-dark font-sans antialiased;
+  }
+}
